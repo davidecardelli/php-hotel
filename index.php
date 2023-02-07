@@ -87,8 +87,8 @@ $hotels = [
                         <td><?= $hotel['vote'] ?></td>
                         <td><?= $hotel['distance_to_center'] ?></td>
                     </tr>
-                    <?php endforeach ?>
-                </tbody>
+                <?php endforeach ?>
+            </tbody>
         </table>
     </div>
 </body>
