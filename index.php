@@ -68,13 +68,13 @@ $hotels = [
 <body>
 
 <?php foreach ($hotels as $hotel) : ?>
-<ul>
-    <li><?= $hotel['name'] ?></li>
-    <li><?= $hotel['description'] ?></li>
-    <li><?= $hotel['parking'] ?></li>
-    <li><?= $hotel['vote'] ?></li>
-    <li><?= $hotel['distance_to_center'] ?></li>
-</ul>
+    <ul>
+        <li><?= $hotel['name'] ?></li>
+        <li><?= $hotel['description'] ?></li>
+        <li><?= $hotel['parking'] ?></li>
+        <li><?= $hotel['vote'] ?></li>
+        <li><?= $hotel['distance_to_center'] ?></li>
+    </ul>
 <?php endforeach ?>
 
 </body>
