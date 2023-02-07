@@ -65,18 +65,32 @@ $hotels = [
 
 </head>
 
-<body>
-
-<?php foreach ($hotels as $hotel) : ?>
-    <ul>
-        <li><?= $hotel['name'] ?></li>
-        <li><?= $hotel['description'] ?></li>
-        <li><?= $hotel['parking'] ?></li>
-        <li><?= $hotel['vote'] ?></li>
-        <li><?= $hotel['distance_to_center'] ?></li>
-    </ul>
-<?php endforeach ?>
-
+<body class="bg-secondary">
+    <div class="container">
+        <h1 class="text-center text-white mt-3">Hotel</h1>
+        <table class="table table-dark  text-center mt-3">
+            <thead>
+                <tr>
+                    <th scope="col">Nome</th>
+                    <th scope="col">Descrizione</th>
+                    <th scope="col">Parcheggio</th>
+                    <th scope="col">Voto</th>
+                    <th scope="col">Voto</th>
+                </tr>
+            </thead>
+            <tbody>
+                <?php foreach ($hotels as $hotel) : ?>
+                    <tr>
+                        <td><?= $hotel['name'] ?></td>
+                        <td><?= $hotel['description'] ?></td>
+                        <td><?= $hotel['parking'] ?></td>
+                        <td><?= $hotel['vote'] ?></td>
+                        <td><?= $hotel['distance_to_center'] ?></td>
+                    </tr>
+                    <?php endforeach ?>
+                </tbody>
+        </table>
+    </div>
 </body>
 
 </html>
