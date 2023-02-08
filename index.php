@@ -75,7 +75,7 @@ $hotels = [
                     <th scope="col">Descrizione</th>
                     <th scope="col">Parcheggio</th>
                     <th scope="col">Voto</th>
-                    <th scope="col">Voto</th>
+                    <th scope="col">Distanza dal centro</th>
                 </tr>
             </thead>
             <tbody>
@@ -87,7 +87,7 @@ $hotels = [
                             <i class="<?= $hotel['parking'] ? 'bi-check-circle-fill text-success' : 'bi-x-circle-fill text-danger'?>"></i>
                         </td>
                         <td><?= $hotel['vote'] ?></td>
-                        <td><?= $hotel['distance_to_center'] ?></td>
+                        <td><?= $hotel['distance_to_center'] ?> Km</td>
                     </tr>
                 <?php endforeach ?>
             </tbody>
