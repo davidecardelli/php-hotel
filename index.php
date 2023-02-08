@@ -83,7 +83,9 @@ $hotels = [
                     <tr>
                         <td><?= $hotel['name'] ?></td>
                         <td><?= $hotel['description'] ?></td>
-                        <td><?= $hotel['parking'] ? 'Si' : 'No'?></td>
+                        <td>
+                            <i class="<?= $hotel['parking'] ? 'bi-check-circle-fill text-success' : 'bi-x-circle-fill text-danger'?>"></i>
+                        </td>
                         <td><?= $hotel['vote'] ?></td>
                         <td><?= $hotel['distance_to_center'] ?></td>
                     </tr>
